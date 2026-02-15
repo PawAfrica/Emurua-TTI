@@ -3,6 +3,7 @@ import Faculties from '../components/sections/Faculties'
 import Intakes from '../components/sections/Intakes'
 import LandingPage from '../components/sections/LandingPage'
 import OurStory from '../components/sections/OurStory'
+import Partners from '../components/sections/Partners'
 import Values from '../components/sections/Values'
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <Faculties />
       <Intakes />
       <Extras />
+      <Partners />
     </div>
   )
 }
