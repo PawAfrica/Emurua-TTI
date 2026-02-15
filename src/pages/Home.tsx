@@ -1,10 +1,11 @@
+import LandingPage from "../components/sections/LandingPage"
 
 
 const Home = () => {
   return (
     <div className='relative'>
-      {/* <LandingPage />
-      <About />
+      <LandingPage />
+      {/* <About />
       <Belief />
       <HandsOn />
       <Courses />
