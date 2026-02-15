@@ -29,7 +29,7 @@
 
 
 
-import { Button, Image, Text, Title } from '@mantine/core'
+import { Text, Title } from '@mantine/core'
 
 const Values = () => {
   return (

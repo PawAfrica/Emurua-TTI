@@ -1,4 +1,4 @@
-import { Card, Image, Text, Title, Button } from '@mantine/core'
+import { Image, Text, Title} from '@mantine/core'
 
 import Football from '../../assets/football.png'
 import Netball from '../../assets/netball.png'

@@ -26,7 +26,7 @@
 
 
 
-import { Text, Title,Button } from '@mantine/core'
+import { Text, Title } from '@mantine/core'
 
 const intakeData = [
   {

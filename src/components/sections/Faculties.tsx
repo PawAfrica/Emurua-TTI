@@ -101,7 +101,7 @@ const Faculties = () => {
       </Title>
 
       <div className='lower w-full flex flex-wrap gap-4'>
-        {facultiesData.map((faculty, i) => (
+        {facultiesData.map((faculty) => (
           <div className='card flex flex-col md:flex-row h-auto md:h-[180px] w-full md:w-[32%] bg-neutral-200 rounded-xl overflow-hidden'>
             <div className='left w-full md:w-[35%] h-[150px] md:h-full'>
               <Image
