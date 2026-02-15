@@ -1,3 +1,4 @@
+import Extras from '../components/sections/Extras'
 import Faculties from '../components/sections/Faculties'
 import Intakes from '../components/sections/Intakes'
 import LandingPage from '../components/sections/LandingPage'
@@ -12,6 +13,7 @@ const Home = () => {
       <OurStory />
       <Faculties />
       <Intakes />
+      <Extras />
     </div>
   )
 }
