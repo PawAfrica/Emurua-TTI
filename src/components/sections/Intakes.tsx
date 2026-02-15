@@ -1,0 +1,92 @@
+// import { Card, Image, Text, Title, Button } from '@mantine/core'
+
+// const Intakes = () => {
+//   return (
+//     <div className='intakes px-[4%] h-[80vh]'>
+//       <Title className='text-[2.9em]'>Intakes</Title>
+
+//       <div className="lower mt-10">
+//         <div className="intake-card">
+//             <Text className='text-[1.4em] font-bold'>January Intake</Text>
+
+//             <div className="details">
+//                 <Text>Starting on</Text>
+//                 <Text>1st January 2026</Text>
+//                 <Text>Closing on</Text>
+//                 <Text>2nd February 2026</Text>
+//             </div>
+
+//         </div>
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default Intakes
+
+
+
+import { Text, Title } from '@mantine/core'
+
+const intakeData = [
+  {
+    name: 'January Intake',
+    start: '1st January 2026',
+    close: '2nd February 2026'
+  },
+  {
+    name: 'May Intake',
+    start: '1st May 2026',
+    close: '15th June 2026'
+  },
+  {
+    name: 'September Intake',
+    start: '1st September 2026',
+    close: '15th October 2026'
+  }
+]
+
+const Intakes = () => {
+  return (
+    <div className='intakes px-[4%] py-16'>
+      <Title className='text-[2.5em] md:text-[2.9em] mb-12'>
+        Intakes
+      </Title>
+
+      <div className="lower flex flex-col md:flex-row gap-6">
+        {intakeData.map((intake, i) => (
+          <div
+            key={i}
+            className="intake-card w-full md:w-[32%] bg-neutral-100 p-6 border-l-[6px] border-black shadow-sm hover:shadow-md transition duration-300"
+          >
+            <Text className='text-[1.4em] font-bold mb-6'>
+              {intake.name}
+            </Text>
+
+            <div className="details space-y-3">
+              <div>
+                <Text className='text-gray-500 text-sm'>
+                  Starting on
+                </Text>
+                <Text className='font-semibold'>
+                  {intake.start}
+                </Text>
+              </div>
+
+              <div>
+                <Text className='text-gray-500 text-sm'>
+                  Closing on
+                </Text>
+                <Text className='font-semibold'>
+                  {intake.close}
+                </Text>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default Intakes

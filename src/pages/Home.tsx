@@ -1,8 +1,8 @@
-import Faculties from "../components/sections/Faculties"
-import LandingPage from "../components/sections/LandingPage"
-import OurStory from "../components/sections/OurStory"
-import Values from "../components/sections/Values"
-
+import Faculties from '../components/sections/Faculties'
+import Intakes from '../components/sections/Intakes'
+import LandingPage from '../components/sections/LandingPage'
+import OurStory from '../components/sections/OurStory'
+import Values from '../components/sections/Values'
 
 const Home = () => {
   return (
@@ -11,14 +11,7 @@ const Home = () => {
       <Values />
       <OurStory />
       <Faculties />
-      {/* <About />
-      <Belief />
-      <HandsOn />
-      <Courses />
       <Intakes />
-      <Sport />
-      <Partners />
-      <News /> */}
     </div>
   )
 }
