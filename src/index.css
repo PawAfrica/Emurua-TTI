@@ -17,6 +17,74 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 976px;
 
+  --color-claret-50: #fdf4f3;
+  --color-claret-100: #fce8e7;
+  --color-claret-200: #f9d3d2;
+  --color-claret-300: #f3b0ae;
+  --color-claret-400: #ec8081;
+  --color-claret-500: #e05357;
+  --color-claret-600: #cb333e;
+  --color-claret-700: #ab2533;
+  --color-claret-800: #8f2230;
+  --color-claret-900: #832232;
+  --color-claret-950: #440d14;
+
+  --color-primary-50: #efffe4;
+  --color-primary-100: #dbffc4;
+  --color-primary-200: #b9ff90;
+  --color-primary-300: #8bff51;
+  --color-primary-400: #4efe02;
+  --color-primary-500: #40e500;
+  --color-primary-600: #2eb700;
+  --color-primary-700: #238b00;
+  --color-primary-800: #1f6d07;
+  --color-primary-900: #1d5c0b;
+  --color-primary-950: #093400;
+
+  --color-black-50: #f5f7fa;
+  --color-black-100: #eaeef4;
+  --color-black-200: #d1dae6;
+  --color-black-300: #a9bad0;
+  --color-black-400: #7b95b5;
+  --color-black-500: #5a789d;
+  --color-black-600: #466083;
+  --color-black-700: #3a4e6a;
+  --color-black-800: #334359;
+  --color-black-900: #2e3a4c;
+  --color-black-950: #11151c;
+
+  --color-neutral-50: #f8f8fa;
+  --color-neutral-100: #f0eff4;
+  --color-neutral-200: #e7e6ee;
+  --color-neutral-300: #d5d2e0;
+  --color-neutral-400: #bdb7ce;
+  --color-neutral-500: #a399b9;
+  --color-neutral-600: #8f81a6;
+  --color-neutral-700: #7d6f92;
+  --color-neutral-800: #685c7b;
+  --color-neutral-900: #564d65;
+  --color-neutral-950: #383243;
+
+  --color-cello-50: #f3f6fc;
+  --color-cello-100: #e6edf8;
+  --color-cello-200: #c7d9f0;
+  --color-cello-300: #95bae4;
+  --color-cello-400: #5c95d4;
+  --color-cello-500: #3777c0;
+  --color-cello-600: #275da2;
+  --color-cello-700: #214b83;
+  --color-cello-800: #1f416d;
+  --color-cello-900: #1d3557;
+  --color-cello-950: #14243d;
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -29,32 +97,42 @@
   .nav-x:hover {
     color: var(--color-accent-500);
   }
+  .primary-btn {
+  border-radius: 50%;   /* rounded-full */
+  height: 44px;            /* h-11 = 44px */
+  padding-left: 2em;       
+  padding-right: 2em;
+}
 
 
   /* Make the table scrollable horizontally on small screens */
-.table-responsive {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-.font-bold{
-  font-weight: 700;
-}
-/* Ensure that the table fits within the screen on small devices */
-@media (max-width: 768px) {
-  .mantine-Table {
-    width: 100%;
-    font-size: 12px;
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
-  .mantine-Table td, .mantine-Table th {
-    padding: 8px;
+  .font-bold {
+    font-weight: 700;
   }
 
-  .mantine-Table .mantine-TableTh, .mantine-Table .mantine-TableTd {
-    word-wrap: break-word;
-    white-space: normal;
+  /* Ensure that the table fits within the screen on small devices */
+  @media (max-width: 768px) {
+    .mantine-Table {
+      width: 100%;
+      font-size: 12px;
+    }
+
+    .mantine-Table td,
+    .mantine-Table th {
+      padding: 8px;
+    }
+
+    .mantine-Table .mantine-TableTh,
+    .mantine-Table .mantine-TableTd {
+      word-wrap: break-word;
+      white-space: normal;
+    }
   }
-}
 
 
 

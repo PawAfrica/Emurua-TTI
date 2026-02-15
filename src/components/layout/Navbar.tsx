@@ -36,7 +36,7 @@ const Navbar = () => {
 
       <div className='lower bg-white h-[70px] flex items-center px-[4%] relative'>
         {/* Left side */}
-        <div className='flex gap-6 bg-red-200'>
+        <div className='flex gap-6'>
           {leftItems.map((item, i) => (
             <Link key={i} to={item.path} className='text-[1.1em]'>
               {item.name}
@@ -57,7 +57,7 @@ const Navbar = () => {
             </Link>
           ))}
 
-          <Button className='rounded-full h-11 px-[2em]'>Admission</Button>
+          <Button className='primary-btn rounded-full h-11 px-[2em]'>Admission</Button>
         </div>
 
         
