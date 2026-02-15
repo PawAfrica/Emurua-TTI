@@ -70,19 +70,27 @@
 
 
 
-import { Card, Image, Text, Title, Button } from '@mantine/core'
-import Faculty1 from '../../assets/college.png'
+import { Image, Text, Title, Button } from '@mantine/core'
+import Faculty1 from '../../assets/departments/electrical.png'
+import Faculty2 from '../../assets/departments/mechanical.png'
+import Faculty3 from '../../assets/departments/civil.png'
+import Faculty4 from '../../assets/departments/applied.png'
+import Faculty5 from '../../assets/departments/agric.png'
+import Faculty6 from '../../assets/departments/hospitality.png'
+import Faculty7 from '../../assets/departments/ict.png'
+import Faculty8 from '../../assets/departments/business.png'
+import Faculty9 from '../../assets/departments/short.png'
 
 const facultiesData = [
   { name: 'Electrical and Electronics Engineering', image: Faculty1 },
-  { name: 'Mechanical and Automotive Engineering', image: Faculty1 },
-  { name: 'Civil and Building Engineering', image: Faculty1 },
-  { name: 'Applied Sciences', image: Faculty1 },
-  { name: 'Agriculture', image: Faculty1 },
-  { name: 'Hospitality and Fashion', image: Faculty1 },
-  { name: 'ICT and Records', image: Faculty1 },
-  { name: 'Business and Administration', image: Faculty1 },
-  { name: 'Short and Skills Courses', image: Faculty1 }
+  { name: 'Mechanical and Automotive Engineering', image: Faculty2 },
+  { name: 'Civil and Building Engineering', image: Faculty3 },
+  { name: 'Applied Sciences', image: Faculty4 },
+  { name: 'Agriculture', image: Faculty5 },
+  { name: 'Hospitality and Fashion', image: Faculty6 },
+  { name: 'ICT and Records', image: Faculty7 },
+  { name: 'Business and Administration', image: Faculty8 },
+  { name: 'Short and Skills Courses', image: Faculty9 }
 ]
 
 const Faculties = () => {
@@ -90,7 +98,7 @@ const Faculties = () => {
     <div className='faculties px-[4%] py-16 bg-primar'>
       {/* Section Title */}
       <Title className='text-3xl md:text-4xl text-primary-800 text-left mb-12'>
-        Faculties
+        Our Faculties
       </Title>
 
       <div className='lower w-full flex flex-wrap gap-4'>

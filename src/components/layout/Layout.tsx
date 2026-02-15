@@ -4,6 +4,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import { useMediaQuery } from '@mantine/hooks'
 import Footer from './Footer'
 import Navbar from './Navbar'
+import MobileNav from './MobileNav'
 // import MobileNav from './MobileNav'
 
 const Layout = () => {
@@ -16,7 +17,7 @@ const Layout = () => {
 
   return (
     <div>
-      {isSmallScreen ? <Navbar /> : <Navbar />}
+      {isSmallScreen ? <MobileNav /> : <Navbar />}
 
       <main>
         <Outlet />
