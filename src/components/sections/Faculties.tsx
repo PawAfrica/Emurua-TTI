@@ -32,7 +32,6 @@
 //             <div className='left w-[35%]'>
 //               <Image src={faculty.image} className='h-full' />
 //             </div>
-           
 
 //             <div className='right w-[63%] flex flex-col justify-between p-1'>
 //               <Text className='text-[1em] font-medium text-gray-500 mb-3'>
@@ -62,15 +61,9 @@
 
 // export default Faculties
 
-
-
-
-
-
-
-
-
 import { Image, Text, Title, Button } from '@mantine/core'
+import { useNavigate } from 'react-router-dom'
+
 import Faculty1 from '../../assets/departments/electrical.png'
 import Faculty2 from '../../assets/departments/mechanical.png'
 import Faculty3 from '../../assets/departments/civil.png'
@@ -94,10 +87,16 @@ const facultiesData = [
 ]
 
 const Faculties = () => {
+  const navigate = useNavigate()
+
+  const handleSeeCourses = (facultyName: string) => {
+    // Navigate to /courses and set category query param
+    navigate(`/courses?category=${encodeURIComponent(facultyName)}`)
+  }
   return (
-    <div className='faculties px-[4%] py-16 bg-primar'>
+    <div className='faculties px-[4%] pt-2 pb-8 bg-primar'>
       {/* Section Title */}
-      <Title className='text-3xl md:text-4xl text-primary-800 text-left mb-12'>
+      <Title className='text-[2.5em] md:text-[2.9em] text-black-800 text-left mb-12'>
         Our Faculties
       </Title>
 
@@ -105,7 +104,10 @@ const Faculties = () => {
         {facultiesData.map((faculty, i) => (
           <div className='card flex flex-col md:flex-row h-auto md:h-[180px] w-full md:w-[32%] bg-neutral-200 rounded-xl overflow-hidden'>
             <div className='left w-full md:w-[35%] h-[150px] md:h-full'>
-              <Image src={faculty.image} className='h-full w-full object-cover' />
+              <Image
+                src={faculty.image}
+                className='h-full w-full object-cover'
+              />
             </div>
 
             <div className='right w-full md:w-[63%] flex flex-col p-3'>
@@ -122,6 +124,7 @@ const Faculties = () => {
               <Button
                 variant='outline'
                 className='border-2 border-primary-600 text-primary-800 w-[60%] md:w-[60%] mt-auto hover:bg-secondary-500 hover:text-white transition-colors duration-300 rounded-3xl'
+              onClick={() => handleSeeCourses(faculty.name)}
               >
                 See Courses
               </Button>
@@ -134,4 +137,3 @@ const Faculties = () => {
 }
 
 export default Faculties
-

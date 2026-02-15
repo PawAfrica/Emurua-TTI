@@ -49,7 +49,7 @@ const intakeData = [
 const Intakes = () => {
   return (
     <div className='intakes px-[4%] py-16'>
-      <Title className='text-[2.5em] md:text-[2.9em] mb-12'>
+      <Title className='text-[2.5em] md:text-[2.9em] text-black-800 mb-12'>
         Intakes
       </Title>
 
@@ -90,7 +90,7 @@ const Intakes = () => {
   {intakeData.map((intake, i) => (
     <div
       key={i}
-      className="intake-card w-full md:w-[32%] bg-neutral-100 p-6 border-l-[6px] border-black shadow-sm hover:shadow-md transition duration-300 flex flex-col"
+      className="intake-card w-full md:w-[32%] bg-neutral-100 p-6 border-l-[6px] border-black-800 shadow-sm hover:shadow-md transition duration-300 flex flex-col"
     >
       <Text className='text-[1.4em] font-bold mb-6'>
         {intake.name}
@@ -118,7 +118,7 @@ const Intakes = () => {
 
       {/* Apply Button */}
       {/* <Button className="mt-auto bg-black text-white py-3 rounded-full hover:bg-gray-800 transition duration-300">Apply </Button> */}
-      <button className="mt-auto w-[50%] bg-black text-white py-3 rounded-full hover:bg-gray-800 transition duration-300">
+      <button className="mt-auto w-[50%] bg-black-800 text-white py-3 rounded-full hover:bg-gray-800 transition duration-300">
         Apply Now
       </button>
     </div>

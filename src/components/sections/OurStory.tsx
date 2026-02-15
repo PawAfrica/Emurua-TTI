@@ -35,15 +35,30 @@ const OurStory = () => {
   return (
     <div className='story flex flex-col md:flex-row mt-[4%] px-[4%] py-10 md:h-[90vh] gap-10'>
       {/* Left Image */}
-      <div className='left w-full md:w-[40%] flex justify-center items-center'>
-        <div className='outer-ring bg-black-900 h-[100%] w-[80%] rounded-3xl flex items-center justify-center shadow-lg'>
-          <Image src={Story} className='w-[80%] rounded-2xl z-10' />
+      {/* <div className='left w-full md:w-[40%] flex justify-center items-center'>
+        <div className='outer-ring bg-black-900 h-[100%] md:w-[80%] rounded-3xl flex items-center justify-center shadow-lg'>
+          <Image src={Story} className='w-[90%] md:w-[80%] rounded-2xl z-10' />
+        </div>
+      </div> */}
+
+      <div className='left w-full md:w-[40%] flex justify-center items-center py-6'>
+        <div
+          className='outer-ring relative bg-black-900 rounded-[2rem] flex items-center justify-center shadow-lg
+                  w-90 h-100 md:w-[90%] md:h-[110%]'
+        >
+          <div className='inner-image w-3/4 h-3/4 md:w-4/5 md:h-4/5 rounded-xl overflow-hidden'>
+            <Image
+              src={Story}
+              alt='Story Image'
+              className='w-full h-full object-cover'
+            />
+          </div>
         </div>
       </div>
 
       {/* Right Text */}
       <div className='right w-full md:w-[55%] flex flex-col justify-center gap-6'>
-        <Title className='text-3xl md:text-5xl text-black-800 mb-4'>
+        <Title className='text-5xl md:text-5xl text-black-800 mb-1'>
           Our Story
         </Title>
 
@@ -76,7 +91,6 @@ const OurStory = () => {
               variant='outline'
               className='primary-btn bg-black-700 text-white rounded-full'
               //   className="border-3 border-secondary-500 text-primary-500 h-[3.2em] md:w-[30%]"
-              
             >
               Read More
             </Button>

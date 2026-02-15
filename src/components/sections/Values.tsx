@@ -33,17 +33,17 @@ import { Button, Image, Text, Title } from '@mantine/core'
 
 const Values = () => {
   return (
-    <div className="values bg-primary-900 text-white px-[4%] pt-10 pb-20">
+    <div className="values bg-primary-900 text-white px-[4%] pt-10 pb-12">
       {/* Title */}
       <div className="title text-left">
         <Title className="text-[3em] md:text-[3.5em] font-bold">Our Values</Title>
-        <Text className="mt-4 text-lg md:text-xl max-w-2xl ">
+        {/* <Text className="mt-4 text-lg md:text-xl max-w-2xl ">
           We are committed to excellence, integrity, and empowering our students to achieve their goals.
-        </Text>
+        </Text> */}
       </div>
 
       {/* Values Section */}
-      <div className="lower flex flex-col md:flex-row justify-between mt-16 gap-10">
+      <div className="lower flex flex-col md:flex-row justify-between mt-10 gap-10">
         {/* Vision */}
         <div className="vision flex-1 border-b md:border-b-0 md:border-r border-white pb-6 md:pb-0 md:pr-6">
           <Text className="text-[1.5em] font-bold mb-2">Vision</Text>
