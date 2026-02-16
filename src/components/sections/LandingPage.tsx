@@ -38,20 +38,17 @@
 //           onLoad={() => setLoaded(true)}
 //         />
 
-    
 //       </div>
 
 //       {/* <div className='absolute top-0 left-0 w-full h-full bg-[linear-gradient(to_right,#002C35_20%,#002C35_30%,#002C35bf_50%,#002C3500_100%)]'></div> */}
 
 //       {/* <div className='text-card absolute left-0 bottom-55 w-[50%] h-[260px] mx-[4%]'> */}
 //       <div className='text-card absolute left-0 bottom-30 md:bottom-55 md:w-[50%] h-[260px] mx-[4%]'>
-     
 
 //         <Title className='text-white md:text-[4em] mb-1 font-sans'>
 
 //           Master the Craft, Secure the Future
 //         </Title>
-
 
 //         <Button
 //           onClick={() => navigate('/admissions')}
@@ -78,14 +75,16 @@
 
 // export default LandingPage
 
-
-
 import { Button, Image, Text, Title } from '@mantine/core'
 import School from '../../assets/college.png'
+import SchoolBlur from '../../assets/collegeblur.png'
+
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 
 const LandingPage = () => {
   const navigate = useNavigate()
+  const [loaded, setLoaded] = useState(false)
 
   return (
     <div className='landing relative w-full h-[96vh] md:h-[110vh] overflow-hidden'>
@@ -93,7 +92,15 @@ const LandingPage = () => {
       <Image
         src={School}
         alt='School'
-        className='absolute inset-0 w-full h-full object-cover scale-105'
+        className='absolute inset-0 w-full h-full object-cover scale-105 mix-blend-multiply'
+        onLoad={() => setLoaded(true)}
+      />
+
+      <Image
+        src={SchoolBlur}
+        alt='Blurred'
+        className='absolute top-0 right-0 w-[80%] h-full object-cover mix-blend-multiply scale-105 blur-md transition-opacity duration-500'
+        style={{ opacity: loaded ? 0 : 1 }}
       />
 
       {/* Dark Gradient Overlay */}
@@ -105,7 +112,8 @@ const LandingPage = () => {
           Master the Craft, <br /> Secure the Future
         </Title>
         <Text className='text-gray-200 mt-4 md:mt-6 text-lg md:text-xl drop-shadow-md'>
-          Join Emurua Dikirr TTI to build your skills, expand your opportunities, and achieve excellence.
+          Join Emurua Dikirr TTI to build your skills, expand your
+          opportunities, and achieve excellence.
         </Text>
         <Button
           onClick={() => navigate('/admissions')}
