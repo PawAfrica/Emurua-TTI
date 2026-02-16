@@ -26,7 +26,7 @@ const Courses = () => {
   }, [categoryQuery])
 
   return (
-    <div className='p-6 mt-20 md:mt-0'>
+    <div className='px-[4%] mt-20 md:mt-0'>
       <Title order={2} mb='md'>
         Our Courses
       </Title>
