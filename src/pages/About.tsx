@@ -258,7 +258,7 @@ const About = () => {
             constituency, aligned with Vision 2030, Sustainable Development Goals, and the Big Four Agenda.
           </Text>
           <Text className="text-gray-700 leading-relaxed mt-3">
-            Officially commissioned on 30th August 2019 by H.E. Dr. William Ruto, the institute began
+            Officially commissioned on <b>30th August 2019</b> by H.E. Dr. William Ruto, the institute began
             with 250 students (139 females, 111 males) across multiple departments.
           </Text>
         </section>
@@ -270,11 +270,11 @@ const About = () => {
             <Title order={3} className="text-2xl text-primary-900">Growth & Development</Title>
           </div>
           <ul className="list-disc pl-6 text-gray-700 space-y-2 leading-relaxed">
-            <li>Staffing: 8 PSC and 34 BOG staff, with trainers trained in Competency-Based Assessment.</li>
-            <li>28 accredited training programs across departments.</li>
-            <li>Acquisition of modern training equipment including computer workshops and training kitchens.</li>
-            <li>Creation and equipping of offices: procurement, finance, reception, examinations.</li>
-            <li>Laboratory and workshop facilities improved with furniture and tools.</li>
+            <li><b>Staffing:</b> 8 PSC and 34 BOG staff, with trainers trained in Competency-Based Assessment.</li>
+            <li><b>28 accredited training programs</b> across departments.</li>
+            <li><b>Acquisition of modern training equipment</b> including computer workshops and training kitchens.</li>
+            <li><b>Creation and equipping of offices:</b> procurement, finance, reception, examinations.</li>
+            <li><b>Laboratory and workshop facilities</b> improved with furniture and tools.</li>
           </ul>
         </section>
 
