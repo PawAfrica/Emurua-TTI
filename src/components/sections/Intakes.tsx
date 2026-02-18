@@ -24,9 +24,8 @@
 
 // export default Intakes
 
-
-
 import { Text, Title } from '@mantine/core'
+import { useNavigate } from 'react-router-dom'
 
 const intakeData = [
   {
@@ -47,6 +46,7 @@ const intakeData = [
 ]
 
 const Intakes = () => {
+  const navigate = useNavigate()
   return (
     <div className='intakes px-[4%] py-16'>
       <Title className='text-[2.5em] md:text-[2.9em] text-black-800 mb-12'>
@@ -86,45 +86,37 @@ const Intakes = () => {
         ))}
       </div> */}
 
-      <div className="lower flex flex-col md:flex-row gap-6">
-  {intakeData.map((intake, i) => (
-    <div
-      key={i}
-      className="intake-card w-full md:w-[32%] bg-neutral-100 p-6 border-l-[6px] border-black-800 shadow-sm hover:shadow-md transition duration-300 flex flex-col"
-    >
-      <Text className='text-[1.4em] font-bold mb-6'>
-        {intake.name}
-      </Text>
+      <div className='lower flex flex-col md:flex-row gap-6'>
+        {intakeData.map((intake, i) => (
+          <div
+            key={i}
+            className='intake-card w-full md:w-[32%] bg-neutral-100 p-6 border-l-[6px] border-black-800 shadow-sm hover:shadow-md transition duration-300 flex flex-col'
+          >
+            <Text className='text-[1.4em] font-bold mb-6'>{intake.name}</Text>
 
-      <div className="details space-y-3 mb-6">
-        <div>
-          <Text className='text-gray-500 text-sm'>
-            Starting on
-          </Text>
-          <Text className='font-semibold'>
-            {intake.start}
-          </Text>
-        </div>
+            <div className='details space-y-3 mb-6'>
+              <div>
+                <Text className='text-gray-500 text-sm'>Starting on</Text>
+                <Text className='font-semibold'>{intake.start}</Text>
+              </div>
 
-        <div>
-          <Text className='text-gray-500 text-sm'>
-            Closing on
-          </Text>
-          <Text className='font-semibold'>
-            {intake.close}
-          </Text>
-        </div>
+              <div>
+                <Text className='text-gray-500 text-sm'>Closing on</Text>
+                <Text className='font-semibold'>{intake.close}</Text>
+              </div>
+            </div>
+
+            {/* Apply Button */}
+            {/* <Button className="mt-auto bg-black text-white py-3 rounded-full hover:bg-gray-800 transition duration-300">Apply </Button> */}
+            <button
+              onClick={() => navigate('/admissions')}
+              className='mt-auto w-[50%] bg-black-800 text-white py-3 rounded-full hover:bg-gray-800 transition duration-300'
+            >
+              Apply Now
+            </button>
+          </div>
+        ))}
       </div>
-
-      {/* Apply Button */}
-      {/* <Button className="mt-auto bg-black text-white py-3 rounded-full hover:bg-gray-800 transition duration-300">Apply </Button> */}
-      <button className="mt-auto w-[50%] bg-black-800 text-white py-3 rounded-full hover:bg-gray-800 transition duration-300">
-        Apply Now
-      </button>
-    </div>
-  ))}
-</div>
-
     </div>
   )
 }
