@@ -27,7 +27,7 @@ const Courses = () => {
 
   return (
     <div className='px-[4%] mt-20 md:mt-0'>
-      <Title order={2} mb='md'>
+      <Title order={2} mb='md' className='md:mt-5 text-black-800'>
         Our Courses
       </Title>
 
@@ -55,7 +55,7 @@ const Courses = () => {
         return (
           <div key={category.title} className='mb-12'>
             {/* Category Title */}
-            <Title order={4} mb='xs' className='text-primary-600'>
+            <Title order={4} mb='xs' className='text-black-500 font-bold'>
               {category.title}
             </Title>
 

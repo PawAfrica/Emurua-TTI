@@ -69,13 +69,14 @@
 
 import { Button } from '@mantine/core'
 import navdata from '../../data/navdata'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation,useNavigate } from 'react-router-dom'
 import Logo from '../../assets/logos/logo.svg'
 
 const Navbar = () => {
   const leftItems = navdata.slice(0, 4)
   const rightItems = navdata.slice(4)
   const location = useLocation() // Get current route path
+    const navigate = useNavigate()
 
   const getLinkClass = (path: string) =>
     `text-[1.1em] px-5 py-2 rounded-full ${
@@ -138,7 +139,9 @@ const Navbar = () => {
             </Link>
           ))}
 
-          <Button className='primary-btn rounded-full h-11 px-[2em] bg-claret-700'>
+          <Button 
+          onClick={() => navigate('/admissions')}
+          className='primary-btn rounded-full h-11 px-[2em] bg-claret-700'>
             Admission
           </Button>
         </div>
