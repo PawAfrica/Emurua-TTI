@@ -1,7 +1,7 @@
   import React, { useState } from 'react'
   import { Card, Title, Badge, Select, Group, Text, Button } from '@mantine/core'
   import { FiDownload } from 'react-icons/fi'
-  import TenderDoc from '../docs/x.pdf'
+  import TenderDoc from '../docs/ADDENDUM-SUPPLIER REGISTRATION TENDER DOCUMENT FY 2025-2027.pdf'
 
   interface Tender {
     id: string
@@ -15,10 +15,10 @@
   const tendersData: Tender[] = [
     {
       id: '1',
-      title: '(example) Registration of Suppliers for Goods, Services, and Works',
-      year: 'Deadline: 27/06/2026, 2:00 PM',
-      status: 'Open',
-      description: 'Eligible suppliers are invited to apply for supply of goods and services for 2026/2027',
+      title: 'Registration of Suppliers for Goods, Services, and Works',
+      year: 'Deadline: 09/06/2025, 11:00 AM',
+      status: 'Closed',
+      description: 'Eligible suppliers are invited to apply for supply of goods and services for 2025/2026&2026/2027',
       // documentUrl: '/docs/supply-of-stationery.pdf',
       documentUrl: TenderDoc
     },
