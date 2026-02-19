@@ -10,14 +10,16 @@
     status: 'Open' | 'Closed'
     description: string
     documentUrl: string 
+    deadline:string
   }
 
   const tendersData: Tender[] = [
     {
       id: '1',
       title: 'Registration of Suppliers for Goods, Services, and Works',
-      year: 'Deadline: 09/06/2025, 11:00 AM',
+      year: '2025/2026 & 2026/2027',
       status: 'Closed',
+      deadline:'Deadline: 09/06/2025, 11:00 AM',
       description: 'Eligible suppliers are invited to apply for supply of goods and services for 2025/2026&2026/2027',
       // documentUrl: '/docs/supply-of-stationery.pdf',
       documentUrl: TenderDoc
@@ -99,7 +101,7 @@
                     {tender.description}
                   </Text>
                   <Badge color='blue' variant='light'>
-                    {tender.year}
+                    {tender.deadline}
                   </Badge>
                 </div>
 
